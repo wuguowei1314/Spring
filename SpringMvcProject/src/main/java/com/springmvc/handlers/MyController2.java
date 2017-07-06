@@ -12,6 +12,7 @@ public class MyController2 implements Controller {
 		ModelAndView mv = new ModelAndView("/WEB-INF/jsp/myController.jsp");
 		mv.addObject("message", "myController Hello World!");
 		mv.getModel().put("asd", "myController Hello World!");
+		mv.getModel().put("asd", "myController Hello World!");
 		return mv;
 	}
 
