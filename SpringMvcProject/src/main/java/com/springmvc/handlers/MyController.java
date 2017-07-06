@@ -10,6 +10,9 @@ public class MyController implements Controller {
 
 	public ModelAndView handleRequest(HttpServletRequest arg0, HttpServletResponse arg1) throws Exception {
 		ModelAndView mv = new ModelAndView("/WEB-INF/jsp/myController.jsp");
+		
+		mv.addObject("message", "myController Hello World!");
+		
 		mv.addObject("message", "myController Hello World!");
 		mv.getModel().put("asd", "myController Hello World!");
 		return mv;
